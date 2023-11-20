@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_margin="@dimen/_2sdp"
+                android:src="@drawable/baseline_menu_24"
+                app:backgroundTint="@color/lavender"
+                app:fabSize="mini" />
+
+            <EditText
+                android:id="@+id/heightEDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Enter the Height of the Image"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <EditText
+                android:id="@+id/widthEDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="Enter the Width of the Image"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <Button
+                android:id="@+id/generateBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/lavender"
+                android:padding="@dimen/_5sdp"
+                android:text="Generate Image"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:cornerRadius="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/PlaceHolderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Your PlaceHolder Image :"
+                android:textSize="@dimen/_20sdp" />
+
+            <ImageView
+                android:id="@+id/ImageMain"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/customborder" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
